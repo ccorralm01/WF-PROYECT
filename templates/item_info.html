@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Ítem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            white-space: pre-wrap; /* Para mantener el formato de los saltos de línea */
+            word-wrap: break-word;  /* Para ajustar el contenido largo */
+        }
+    </style>
+</head>
+<body>
+    <h1>Información del Ítem</h1>
+    <pre id="json">{{ item_info|tojson(indent=4) }}</pre>
+</body>
+</html>
